@@ -1,0 +1,320 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+.main .your-cars {
+  color: white;
+  font-size: 30px;
+  margin-top: 47px;
+}
+.main .add-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid white;
+  font-size: 25px;
+  color: white;
+  font-style: normal;
+  font-weight: 300;
+  border-radius: 40px;
+  padding: 9px 10px;
+  padding-right: 20px;
+  margin-top: 47px;
+  cursor: pointer;
+}
+.main .add-button .plus-icon {
+  font-size: 20px;
+}
+.main .car-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  width: 440px;
+}
+.main .car-list .car-log {
+  display: flex;
+  font-size: 22px;
+  justify-content: space-between;
+  width: 290px;
+  margin-top: 47px;
+  cursor: pointer;
+}
+.main .car-list .car-log .number {
+  font-size: 28px;
+}
+.main .car-list .car-log .car-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  max-width: 250px;
+  width: 100%;
+}
+.main .car-list .car-log .car-name {
+  font-size: 25px;
+}
+.main .car-list .car-log .car-vin {
+  font-size: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+.main .subtitle {
+  color: white;
+  font-size: 30px;
+  margin-top: 25px;
+}
+.main .inputs-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+}
+.main .inputs-block .input-container {
+  margin-bottom: 10px;
+}
+.main .inputs-block .input-container .inp-title {
+  color: white;
+  padding-left: 5px;
+  margin-bottom: 5px;
+}
+.main .inputs-block .input-container .input {
+  width: 300px;
+  height: 40px;
+  border-radius: 13px;
+  border: none;
+  padding: 10px;
+}
+.main .inputs-block .add-car {
+  background-color: #5A5560;
+  color: white;
+  border: none;
+  padding: 10px 34px;
+  border-radius: 40px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.main .car-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #6e7e80;
+  margin-top: 20px;
+}
+.main .car-info-container .car-icon {
+  filter: invert(48%) sepia(16%) saturate(268%) hue-rotate(139deg) brightness(70%) contrast(88%);
+}
+.main .car-info-container .car-name {
+  font-size: 27px;
+  margin-top: -12px;
+}
+.main .car-info-container .car-vin {
+  font-size: 22px;
+}
+.main .dropdown-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-size: 22px;
+  margin-top: 47px;
+  background-color: white;
+  color: black;
+  padding-block: 9px;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  cursor: pointer;
+}
+.main .chevron-icon {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  transform: translateY(33%);
+}
+.main .dropdown-list {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -5px;
+  background-color: white;
+  width: 100%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transform: translateY(100%);
+  font-size: 23px;
+}
+.main .job-type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 21px 0px;
+}
+.main .job-name {
+  padding-left: 10px;
+  font-weight: 300;
+}
+.main .add-car {
+  background-color: #5A5560;
+  color: white;
+  border: none;
+  padding: 10px 34px;
+  border-radius: 40px;
+  font-weight: 400;
+  margin-top: 160px;
+  cursor: pointer;
+  font-size: 23px;
+}
+.main .inputs-mileage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  width: 100%;
+}
+.main .inputs-mileage .input-container {
+  margin-bottom: 10px;
+  width: inherit;
+}
+.main .inputs-mileage .input-container .inp-title {
+  display: block;
+  color: white;
+  padding-left: 5px;
+  margin-bottom: 5px;
+}
+.main .inputs-mileage .input-container .input {
+  width: inherit;
+  height: 40px;
+  border-radius: 13px;
+  border: none;
+  padding: 10px;
+}
+.main .inputs-mileage .add-car {
+  background-color: #5A5560;
+  color: white;
+  border: none;
+  padding: 10px 34px;
+  border-radius: 40px;
+  font-weight: 400;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.main .history-title {
+  font-size: 30px;
+  font-weight: 300;
+}
+.main .add-button--log {
+  margin-top: 0px;
+}
+.main .logs-container {
+  margin-top: 20px;
+}
+.main .logs-container .log {
+  margin-top: 35px;
+  position: relative;
+}
+.main .logs-container .log .log-name {
+  font-size: 27px;
+  text-align: center;
+}
+.main .logs-container .log .log-name--yellow {
+  color: #FAED26;
+}
+.main .logs-container .log .log-name--blue {
+  color: lightcoral;
+}
+.main .logs-container .log .log-date,
+.main .logs-container .log .log-next,
+.main .logs-container .log .log-mileage {
+  font-size: 24px;
+  margin: 13px 0px;
+  letter-spacing: 1.2px;
+}
+.main .log::before,
+.main .log::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2px;
+  background-color: rgb(85, 77, 106);
+  bottom: -20px;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #46344E;
+  font-family: "Roboto Condensed";
+  color: white;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 440px;
+  font-weight: 300;
+}
+.main .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 55px;
+}
+.main .title .oiler-icon {
+  width: 74px;
+  filter: invert(80%) sepia(26%) saturate(4931%) hue-rotate(357deg) brightness(103%) contrast(108%);
+  margin-right: 10px;
+  cursor: pointer;
+}
+.main .title__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main .title__name {
+  font-size: 40px;
+  color: #FAED26;
+  font-family: kodchasan, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.main .title__subname {
+  font-size: 24px;
+  color: #6e7e80;
+}/*# sourceMappingURL=main.css.map */

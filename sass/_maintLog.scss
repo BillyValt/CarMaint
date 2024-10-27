@@ -1,0 +1,52 @@
+.main {
+  .history-title {
+    font-size: 30px;
+    font-weight: 300;
+  }
+
+  .add-button--log {
+    margin-top: 0px;
+  }
+
+  .logs-container {
+    margin-top: 20px;
+
+    .log {
+      margin-top: 35px;
+      position: relative;
+
+      .log-name {
+        font-size: 27px;
+        text-align: center;
+      }
+
+      .log-name--yellow {
+        color: $yellow;
+      }
+      .log-name--blue {
+        color: lightcoral;
+      }
+
+      .log-date,
+      .log-next,
+      .log-mileage {
+        font-size: 24px;
+        margin: 13px 0px;
+        letter-spacing: 1.2px;
+      }
+    }
+  }
+
+  .log::before,
+  .log::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 2px;
+    background-color: rgb(85, 77, 106);
+    bottom: -20px;
+    width: 100%;
+  }
+
+
+}
