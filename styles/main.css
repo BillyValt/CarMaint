@@ -231,10 +231,9 @@ li {
 .main .logs-container .log .log-date,
 .main .logs-container .log .log-next,
 .main .logs-container .log .log-mileage {
-  font-size: 19px;
-  padding: 13px 0px;
+  font-size: 23px;
+  padding-top: 13px;
   padding-left: 31px;
-  letter-spacing: 1.3px;
 }
 .main .log::before,
 .main .log::after {
@@ -243,7 +242,7 @@ li {
   position: absolute;
   height: 2px;
   background-color: rgb(85, 77, 106);
-  bottom: -3px;
+  bottom: -16px;
   width: 100%;
 }
 
