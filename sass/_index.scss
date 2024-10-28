@@ -1,10 +1,4 @@
 .main {
-  .your-cars {
-    color: white;
-    font-size: 30px;
-    @include blockMargin;
-  }
-
   .add-button {
     display: flex;
     justify-content: center;

@@ -1,25 +1,4 @@
 .main {
-  .car-info-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: $pink;
-    margin-top: 20px;
-
-    .car-icon {
-      filter: invert(48%) sepia(16%) saturate(268%) hue-rotate(139deg) brightness(70%) contrast(88%);
-    }
-
-    .car-name {
-      font-size: 27px;
-      margin-top: -12px;
-    }
-
-    .car-vin {
-      font-size: 22px;
-    }
-  }
-
   .dropdown-block {
     display: flex;
     justify-content: center;
@@ -68,7 +47,7 @@
     justify-content: center;
     align-items: center;
     padding: 21px 0px;
-  
+
   }
 
   .job-name {
