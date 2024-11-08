@@ -17,8 +17,8 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: transparent;
-  border: 1px solid white;
+  background-color: #404076;
+  border: none;
   font-size: 25px;
   color: white;
   font-style: normal;
@@ -38,29 +38,39 @@ li {
   align-items: center;
   color: white;
   width: 440px;
+  margin-top: 30px;
 }
 .main .car-list .car-log {
+  background-color: #404076;
   display: flex;
   font-size: 22px;
-  justify-content: space-between;
-  width: 290px;
-  margin-top: 47px;
+  justify-content: space-evenly;
+  width: 340px;
+  margin-top: 30px;
   cursor: pointer;
+  padding: 15px 20px 15px 10px;
+  border-radius: 30px;
 }
 .main .car-list .car-log .number {
+  display: flex;
+  align-items: center;
   font-size: 28px;
+  padding-right: 30px;
 }
 .main .car-list .car-log .car-info {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
   max-width: 250px;
   width: 100%;
 }
 .main .car-list .car-log .car-name {
   font-size: 25px;
+  padding-bottom: 2px;
+  font-weight: bold;
 }
 .main .car-list .car-log .car-vin {
+  color: #AFAFAF;
   font-size: 20px;
 }
 
@@ -84,6 +94,9 @@ li {
   flex-direction: column;
   align-items: center;
   margin-top: 25px;
+  background-color: #404076;
+  border-radius: 30px;
+  padding: 35px 17px;
 }
 .main .inputs-block .input-container {
   margin-bottom: 10px;
@@ -101,13 +114,13 @@ li {
   padding: 10px;
 }
 .main .inputs-block .add-car {
-  background-color: #5A5560;
+  border: 1px solid white;
   color: white;
-  border: none;
   padding: 10px 34px;
   border-radius: 40px;
   margin-top: 20px;
   cursor: pointer;
+  font-weight: 300;
 }
 
 .main .dropdown-block {
@@ -159,7 +172,7 @@ li {
   font-weight: 300;
 }
 .main .add-car {
-  background-color: #5A5560;
+  background-color: #404076;
   color: white;
   border: none;
   padding: 10px 34px;
@@ -176,6 +189,9 @@ li {
   margin-top: 30px;
   width: 100%;
   max-width: 300px;
+  background-color: #404076;
+  padding: 35px 17px;
+  border-radius: 30px;
 }
 .main .inputs-mileage .input-container {
   margin-bottom: 10px;
@@ -195,12 +211,12 @@ li {
   padding: 10px;
 }
 .main .inputs-mileage .add-car {
-  background-color: #5A5560;
+  background-color: #404076;
   color: white;
-  border: none;
+  border: 1px solid white;
   padding: 10px 34px;
   border-radius: 40px;
-  font-weight: 400;
+  font-weight: 300;
   margin-top: 20px;
   cursor: pointer;
 }
@@ -218,11 +234,14 @@ li {
 .main .logs-container .log {
   margin-top: 10px;
   position: relative;
+  background-color: #404076;
+  border-radius: 30px;
+  padding: 20px 0;
 }
 .main .logs-container .log .log-name {
   font-size: 27px;
   text-align: center;
-  padding: 16px 0 3px 0;
+  margin-bottom: 10px;
 }
 .main .logs-container .log .log-name--yellow {
   color: #FAED26;
@@ -236,16 +255,6 @@ li {
   font-size: 23px;
   padding-top: 13px;
   padding-left: 31px;
-}
-.main .log::before,
-.main .log::after {
-  content: "";
-  display: block;
-  position: absolute;
-  height: 2px;
-  background-color: rgb(85, 77, 106);
-  bottom: -16px;
-  width: 100%;
 }
 
 .main .title {
@@ -274,7 +283,7 @@ li {
 }
 .main .title__subname {
   font-size: 24px;
-  color: #6e7e80;
+  color: #AFAFAF;
 }
 .main .subtitle {
   color: white;
@@ -285,11 +294,11 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #6e7e80;
+  color: #AFAFAF;
   margin-top: 20px;
 }
 .main .car-info-container .car-icon {
-  filter: invert(48%) sepia(16%) saturate(268%) hue-rotate(139deg) brightness(70%) contrast(88%);
+  filter: invert(84%) sepia(1%) saturate(0%) hue-rotate(237deg) brightness(87%) contrast(81%);
 }
 .main .car-info-container .car-name {
   font-size: 27px;
@@ -300,9 +309,10 @@ li {
 }
 
 body {
-  background-color: #46344E;
+  background-color: #4C3158;
   font-family: "Roboto Condensed";
   color: white;
+  height: 1060px;
 }
 
 .main {
@@ -311,6 +321,7 @@ body {
   justify-content: center;
   align-items: center;
   max-width: 440px;
+  min-width: 300px;
   font-weight: 300;
   margin: 0 auto;
 }/*# sourceMappingURL=main.css.map */

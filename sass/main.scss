@@ -10,9 +10,11 @@ body {
   // flex-direction: column;
   // justify-content: center;
   // align-items: center;
-  background-color: #46344E;
+  // background-color: #46344E;
+  background-color: #4C3158;
   font-family: $robotoCon;
   color: white;
+  height: 1060px;
 }
 
 .main {
@@ -21,6 +23,7 @@ body {
   justify-content: center;
   align-items: center;
   max-width: 440px;
+  min-width: 300px;
   font-weight: 300;
   margin: 0 auto;
 }

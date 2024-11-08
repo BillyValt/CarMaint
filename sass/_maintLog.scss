@@ -14,11 +14,15 @@
     .log {
       margin-top: 10px;
       position: relative;
+      background-color: $itemBackgr;
+      border-radius: 30px;
+      padding: 20px 0;
 
       .log-name {
         font-size: 27px;
         text-align: center;
-        padding: 16px 0 3px 0;
+        // padding: 16px 0 3px 0;
+        margin-bottom: 10px;
       }
 
       .log-name--yellow {
@@ -34,21 +38,21 @@
         font-size: 23px;
         padding-top: 13px;
         padding-left: 31px;
-        // letter-spacing: 1.3px;
+         // letter-spacing: 1.3px;
       }
     }
   }
 
-  .log::before,
-  .log::after {
-    content: '';
-    display: block;
-    position: absolute;
-    height: 2px;
-    background-color: rgb(85, 77, 106);
-    bottom: -16px;
-    width: 100%;
-  }
+  // .log::before,
+  // .log::after {
+  //   content: '';
+  //   display: block;
+  //   position: absolute;
+  //   height: 2px;
+  //   background-color: rgb(85, 77, 106);
+  //   bottom: -16px;
+  //   width: 100%;
+  // }
 
 
 }

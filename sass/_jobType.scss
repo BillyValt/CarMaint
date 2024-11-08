@@ -75,6 +75,9 @@
     margin-top: 30px;
     width: 100%;
     max-width: 300px;
+    background-color: $itemBackgr;
+    padding: 35px 17px;
+    border-radius: 30px;
 
     .input-container {
       margin-bottom: 10px;
@@ -100,10 +103,10 @@
     .add-car {
       background-color: $buttonsBackgr;
       color: white;
-      border: none;
+      border: 1px solid white;
       padding: 10px 34px;
       border-radius: 40px;
-      font-weight: 400;
+      font-weight: 300;
       margin-top: 20px;
       cursor: pointer;
     }
