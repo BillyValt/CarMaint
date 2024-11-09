@@ -1,46 +1,32 @@
-import { carsData } from '/scripts/carsData.js';
+import { saveToStorage, getFromStorage } from '/scripts/utils/saveToStorage.js';
 
 const getCars = getFromStorage('carsData');
 const carListEl = document.querySelector('.car-list');
 
-const test = [{
-  test1: 'testq'
-}, {
-  test2: 'testq2'
-}];
+renderCarList();
 
-function saveToStorage(name, item) {
-  const stringified = JSON.stringify(item);
-  localStorage.setItem(name, stringified)
-}
+function renderCarList() {
+  if (getCars) {
+    getCars.forEach((carInfo, index) => {
+      let carNum = index + 1;
+      const { carName, carYear, carVin } = carInfo;
 
-function getFromStorage(item) {
-  const item1 = localStorage.getItem(item);
-  const parsed = JSON.parse(item1)
-
-  return parsed;
-}
-
-saveToStorage('carsData', carsData);
-console.log(getFromStorage('carsData'));
-
-
-getCars.forEach((carInfo, index) => {
-  let carNum = index + 1;
-  const { carName, carYear, carVin } = carInfo;
-
-  carListEl.innerHTML += `
-    <a href="maintLog.html">
-        <div class="car-log">
+      carListEl.innerHTML += `
+        <a href="maintLog.html">
+          <div class="car-log">
             <div class="number">${carNum}</div>
             <div class="car-info">
-                <div class="car-name">${carName}</div>
-                <div class="car-vin">VIN: ${carVin}</div>
+              <div class="car-name">${carName} <span class="car-year">${carYear}</span></div>
+              <div class="car-vin">VIN: ${carVin}</div>
             </div>
-        </div>
-    </a>
-  `;
-});
+          </div>
+        </a>
+      `;
 
-
-
+    });
+  } else {
+    carListEl.innerHTML += `
+    <div class="no-cars js-no-cars">Нет добавленных автомобилей</div>
+    `;
+  }
+}

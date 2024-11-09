@@ -1,11 +1,36 @@
+import { saveToStorage, getFromStorage } from "/scripts/utils/saveToStorage.js";
+// import { carsData } from "/scripts/carsData.js";
+
 const carBrandInputEl = document.querySelector('.js-addcar-input');
 const yearInputEl = document.querySelector('.js-year-input');
 const vinInputEl = document.querySelector('.js-vin-input');
 const addCarBtEl = document.querySelector('.js-add-car-bt');
 
+let carsData = getFromStorage('carsData') || [];
+saveToStorage('carsData', carsData);
+
+
 addCarBtEl.addEventListener('click', () => {
-  console.log(carBrandInputEl.value);
-  console.log(yearInputEl.value);
-  console.log(vinInputEl.value);
+
+  const carName = carBrandInputEl.value;
+  const carYear = yearInputEl.value;
+  const carVin = vinInputEl.value;
+
+  let carData = {
+    carName,
+    carYear,
+    carVin
+  }
+
+  carsData.push(carData);
+
+  saveToStorage('carsData', carsData);
+
+  console.log(carName);
+  console.log(carYear);
+  console.log(carVin);
+
+  console.log(carsData);
+  console.log(carName);
 })
 

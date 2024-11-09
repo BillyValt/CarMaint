@@ -45,7 +45,7 @@ li {
   display: flex;
   font-size: 22px;
   justify-content: space-evenly;
-  width: 340px;
+  max-width: 340px;
   margin-top: 30px;
   cursor: pointer;
   padding: 15px 20px 15px 10px;
@@ -71,6 +71,10 @@ li {
 }
 .main .car-list .car-log .car-vin {
   color: #AFAFAF;
+  font-size: 20px;
+}
+.main .car-list .no-cars {
+  margin-top: 60px;
   font-size: 20px;
 }
 
@@ -237,6 +241,7 @@ li {
   background-color: #404076;
   border-radius: 30px;
   padding: 20px 0;
+  max-width: 320px;
 }
 .main .logs-container .log .log-name {
   font-size: 27px;
