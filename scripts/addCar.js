@@ -1,4 +1,4 @@
-import { saveToStorage, getFromStorage } from "/scripts/utils/saveToStorage.js";
+import { saveToStorage, getFromStorage } from "./scripts/utils/saveToStorage.js";
 // import { carsData } from "/scripts/carsData.js";
 
 const carBrandInputEl = document.querySelector('.js-addcar-input');

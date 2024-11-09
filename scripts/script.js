@@ -1,4 +1,4 @@
-import { saveToStorage, getFromStorage } from '/scripts/utils/saveToStorage.js';
+import { saveToStorage, getFromStorage } from './scripts/utils/saveToStorage.js';
 
 const getCars = getFromStorage('carsData');
 const carListEl = document.querySelector('.car-list');
